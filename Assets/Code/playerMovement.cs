@@ -35,8 +35,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (spriteRenderer != null)
         {
-            if (horizInput > 0.1f) spriteRenderer.flipX = false;
-            else if (horizInput < -0.1f) spriteRenderer.flipX = true;
+            if (horizInput > 0.1f) spriteRenderer.flipX = true;
+            else if (horizInput < -0.1f) spriteRenderer.flipX = false;
         }
     }
 
