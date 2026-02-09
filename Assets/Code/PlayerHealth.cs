@@ -23,6 +23,7 @@ public class PlayerHealth: MonoBehaviour, IDamageable
         if(invulnerabilityTimer > 0f)
         {
             invulnerabilityTimer-=Time.deltaTime;
+            HandleBlink();
         }
     }
 
