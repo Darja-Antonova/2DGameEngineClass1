@@ -81,7 +81,7 @@ public class EnemyAI : MonoBehaviour, IDamageable
         {
             if(isMovingRight && transform.position.x >= rightBound.position.x)
             isMovingRight = false;
-            else if(isMovingRight && transform.position.x <= leftBound.position.x)
+            else if(!isMovingRight && transform.position.x <= leftBound.position.x)
             isMovingRight = true;
         }
         Move(isMovingRight ? 1f: -1f);
