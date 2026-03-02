@@ -13,6 +13,7 @@ public class Collectible : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.collectibleSFX);
             GameManager.Instance.AddCollectible();
             Destroy(gameObject);
         }
